@@ -92,20 +92,113 @@
 	// 	console.log(i);
 	// };
 
-	var arr = [1, 2, 3, 4, 5, 6]
-	var arr2 = [] // un arreglo puede no tener elementos igual
-	var arr3 = [1, 'Hola', true] // mixto
-	console.log(arr);
-	console.log(arr2);
-	console.log(arr3);
+	// var arr = [1, 2, 3, 4, 5, 6]
+	// var arr2 = [] // un arreglo puede no tener elementos igual
+	// var arr3 = [1, 'Hola', true] // mixto
+	// console.log(arr);
+	// console.log(arr2);
+	// console.log(arr3);
 
 	// console.log(arr3[2]); // se le indica que indice del array se muestra
 
 	// console.log(arr3[2]); // se le indica que indice del array se muestra
 
-	for (var i = 0; i >= 0; i--) {
-		Things[i]
-	};
+	// console.log(1+2);
+	// console.log(1+3);
+	// console.log(1+4);
+	// console.log('1'+5);
+	// console.log(1+6);
+	// console.log(1+7);
+
+	// function suma(a, b){
+	// 	if(typeof a != 'number'){
+	// 		console.log('El primer elemento no es un número');
+	// 	}
+	// 	else if (typeof b != 'number'){
+	// 		console.log('El segundo elemento no es un número');
+	// 	}
+	// 	else{
+	// 		console.log(a + b);
+	// 	}
+		
+	// }
+
+	// suma(5, 2);
+	// suma(7, 1);
+	// suma(12, 6);
+	// suma('7', 1);
+	// suma(7, '1');
+
+	// function multiplicacion(a, b, c, d){
+
+	// 	if (typeof a != 'number'){
+	// 		console.log('a no es un numero');
+	// 	}
+
+	// 	console.log(a * b * c *d);
+	// }
+
+	// multiplicacion('1', 2, 3, 4);
+	// multiplicacion(-10, -20, 5, -9);
+
+
+	// function division(a, b){
+	// 	if (typeof a != 'number' || typeof b != 'number'){
+	// 		console.log('No se puede dividir, no son números.');
+	// 	}
+	// 	else if (a === 0 || b === 0){
+	// 		console.log('No se permite que los valores sean 0.');
+	// 	}
+	// 	else{
+	// 		console.log(a / b);
+	// 	}
+	// }	
+
+	// division(10, 5);
+	// division(5, 0);
+	// division(340, 12);
+	// division(0, 38)
+
+	function suma(a, b, c){
+		
+		if(typeof c != 'number'){
+			console.log('C es un número') // ojo
+		}
+
+		else if(a === 'number' && b === 'number'){
+			console.log('A o B no son números'); // ojo
+		}
+
+		else{
+			console.log (a + b);
+			c(); //
+
+		}
+		
+
+
+	}
+
+	function imprimir(){
+		console.log('Hola mundo');
+	}
+
+	suma(5, 2, imprimir);
+	suma(5, 2, imprimir);
+
+
+	/* 
+	EJ1.- definir una funcion que reciba otra funcion, y que la ejecute. La funcion que reciba debe imprimir Hola Mundo.
+
+	EJ2.- Definir 3 funciones, una que reciba 2 funciones y las ejecuta, y las otras 2 funciones que impriman 'Hola Mundo' y 'Adios Mundo'.
+
+	EJ3.- Definir una funcion que reciba otra funcion. La segunda función debe imprimir los números del 1 al 500 pero saltarse el 450.
+
+	EJ4.- Definir una funcion que reciba dos funciones. La primera funcion debe imprimir los números pares. La segunda función debe imprimir los números impares. Ambas hasta el número 1000 o menos.
+
+	EJ5.- Definir una función que reciba una función. Esta última funcion debe imprimir los números primos hasta el 10000.
+
+	
 
 	</script>
 </body>
