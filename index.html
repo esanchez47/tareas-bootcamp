@@ -410,7 +410,33 @@
 		*/
 
 
+	function Computador(){
+		this.ram = '2gb';
+		this.dd = '500gb';
+		this.procesador = 'i3';
+	}
 
+	var compu1 = new Computador();
+	var compu2 = new Computador();
+	var compu3 = new Computador();
+
+	compu1.ram = '4gb';
+	compu2.dd = '1tb';
+	compu3.procesador = 'i7';
+
+	// llamado 1
+	var compu1 = compu1.ram;
+	console.log(compu1);
+
+	// llamado 2
+
+	var compu2 = compu2;
+	console.log(compu2.ram, compu2.dd);
+
+	// llamado 3
+
+	var compu3 = compu3;
+	console.log(compu3.ram, compu3.dd, compu3.procesador);
 
 	</script>
 </body>
