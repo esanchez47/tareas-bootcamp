@@ -159,32 +159,32 @@
 	// division(340, 12);
 	// division(0, 38)
 
-	function suma(a, b, c){
+	// function suma(a, b, c){
 		
-		if(typeof c != 'number'){
-			console.log('C es un número') // ojo
-		}
+	// 	if(typeof c != 'number'){
+	// 		console.log('C es un número') // ojo
+	// 	}
 
-		else if(a === 'number' && b === 'number'){
-			console.log('A o B no son números'); // ojo
-		}
+	// 	else if(a === 'number' && b === 'number'){
+	// 		console.log('A o B no son números'); // ojo
+	// 	}
 
-		else{
-			console.log (a + b);
-			c(); //
+	// 	else{
+	// 		console.log (a + b);
+	// 		c(); //
 
-		}
+	// 	}
 		
 
 
-	}
+	// }
 
-	function imprimir(){
-		console.log('Hola mundo');
-	}
+	// function imprimir(){
+	// 	console.log('Hola mundo');
+	// }
 
-	suma(5, 2, imprimir);
-	suma(5, 2, imprimir);
+	// suma(5, 2, imprimir);
+	// suma(5, 2, imprimir);
 
 
 	/* 
@@ -196,9 +196,221 @@
 
 	EJ4.- Definir una funcion que reciba dos funciones. La primera funcion debe imprimir los números pares. La segunda función debe imprimir los números impares. Ambas hasta el número 1000 o menos.
 
-	EJ5.- Definir una función que reciba una función. Esta última funcion debe imprimir los números primos hasta el 10000.
+	EJ5.- Definir una función que reciba una función. Esta última funcion debe imprimir los números primos hasta el 10000. */
+
+	// 1.-
+
+			// function primera(a){
+			// 	a();		
+			// 	}
+				
+
+			// function imprimir(){
+			// 	console.log('Hola mundo');
+			// }
+
+			// primera(imprimir);
+	
+	// 2.-
+
+			// function recibe(a, b){
+			// 	a();
+			// 	b();
+			// }
+
+			// function hola(){
+			// 	console.log('Hola Mundo');
+			// }
+
+			// function adios(){
+			// 	console.log('Adios Mundo');
+			// }
+
+			// recibe(hola, adios);
+
+	// 3.-
+
+		// function cuenta(){
+		// 	for (var i = 1; i <= 500; i++) {
+		// 		if (i != 450){
+		// 			console.log(i);
+		// 		}
+		// 	};
+		// }
+
+		// cuenta()
+
+	// 4.-
+
+	 /* EJ4.- Definir una funcion que reciba dos funciones. La primera funcion debe imprimir los números pares. La segunda función debe imprimir los números impares. Ambas hasta el número 1000 o menos. */
+
+			// function imprime(a, b){
+			// 	a();
+			// 	b();
+			// };
+
+			// function par(){
+			// 	for (var i = 0; i <= 1000; i+=2) {
+			// 		console.log(i);
+					
+			// 	};
+			// };
+
+			// function impar(){
+			// 	for (var i = 1; i <= 1000; i+=2) {
+			// 		console.log(i);
+			// 	};
+			// };
+			
+
+			// imprime(par, impar);
+
+	// 5.-
+
+		// ver iteracion de numeros primos.
+
+
+	// nomenclaturas
+
+	// camelCase
+	// UpperCamelCase = clases
+	// under_score
+
+	// Funciones anonimas
+
+		// function(){
+
+		// }()
+
+
+	// var arr = [1, 2, 3, 4, 5];
+
+	// arr.map(function(elemento, indice){
+
+	// });
+
+
+	// function imprime1(x){
+	// 	console.log('Hola')
+	// 	var mundo = 'mundo';
+	// 	x(mundo);
+	// }
+
+	// function imprime2(c){
+	// 	console.log(c);
+	// }
+
+	// imprime1(function(x){ // es lo mimso que la linea 299 pero esa tiene un nombre.
+	// 	console.log(x);
+	// });
+	
+	/*
+	1.- Crear una funcion que reciba una funcion anonima y esta imprima Hola Mundo 
+	*/
+	
+	/*
+	
+
+		// function primera(a){
+			// 	a();		
+			// 	}
+				
+
+			// function imprimir(){
+			// 	console.log('Hola mundo');
+			// }
+
+			// primera(imprimir);
+
+	function imprime(funcionAnonima){ // ya se le especifica la funcion anonima.
+		funcionAnonima(); // se ejecuta
+	}
+
+	imprime(function(){ // aqui se declara la funcion anonima *
+		console.log ('Hola Mundo');
+	})
+
+	/* *Igual que antes, imprime(nombrefuncion). Como es anonima, la sintaxis dentro del paréntesis es function(){ Y AQUI LO QUE PASA LA FUNCION. aqui tiras el console log por ejemplo. }; /*
 
 	
+
+	2.- Crear una funcion que reciba una funcion (x) anonima y que esta funcion anonima (y)tiene que sumar 2 numeros que la primera funcion (x) le va a pasar
+	*/
+
+		// function miFuncion2(funcionAnonima){
+		// 	funcionAnonima(1, 2);
+		// }
+		
+		// miFuncion2(function(numero1, numero2){ // 1
+		// 	console.log(numero1 + numero2); // 2
+		// })
+
+	// 1. aqui al crear la funcion se le dan los atributos (como a, b, c.......)
+	// 2. en el console log hago el print
+
+
+	// CLASES (parten con P, para que se identifiquen (solo identificar) como clases)
+
+			// function Perro(){
+			// 	this.cantidadPatas = 4; // this hace referencia al atributo nombre, y ese tiene el valor 'animal'. this hace referencia la clase. this es Perro. Esta apuntando al atributo nombre.
+			// }
+
+			// var perro1 = new Perro();
+			// perro1.nombre = 'wawi';
+			// var perro2 = new Perro();
+			// perro2.nombre = 'baco';
+
+			// console.log(perro1, perro2);
+
+	// var wawi = new Perro();
+	// wawi.nombre = 'wawi';
+	// wawi.raza = 'Yorkshire';
+	// wawi.anos = 3;
+
+	// console.log(wawi);
+
+	// var baco = new Perro();
+	// baco.nombre = 'Baco';
+	// baco.raza = 'Golden Retreiver';
+	// baco.anos = 1;
+
+	// console.log(baco);
+
+
+	// 1.- Crear clase humano con atributos nombre, edad, color pelo y que estos por defecto sean Juan, 30 y Rojo.
+
+	// 2.- Crear 2 instancias de humano, el primero cambiar su nombre a Eduardo y el 2do su color pelo a castano claro.
+
+	function Humano(){
+		this.nombre = 'Juan';
+		this.edad = 30;
+		this.colorPelo = 'rojo';
+	}
+
+	var usuario1 = new Humano();
+	usuario1.nombre = 'Eduardo'; // si solo se llama usuario1.nombre, arroja el valor actual
+	
+	var usuario2 = new Humano();
+	usuario2.colorPelo = 'Castaño claro';
+
+	// 	console.log(usuario1, usuario2);
+
+	// var nombreUsuario1 = usuario1.nombre;
+	// console.log(nombreUsuario1, usuario1.nombre); llamarlo
+
+
+	/* 
+	1. Crear clase Computador y crear 5 atributos por defecto
+
+	2. Crear 3 instancias de la clase Computador:
+		Instancia 1: agregarle mas RAM.
+		Instancia 2: aumentar espacio en disco duro.
+		Instancia 3: cambiar el procesador. 
+	3. Imprimir de la instancia 1 solamente la Ram, de la instancia 2 la Ram y el DD. Y la 3 completa.
+		*/
+
+
+
 
 	</script>
 </body>
