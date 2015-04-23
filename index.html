@@ -16,9 +16,9 @@
 	/* comentarios largos de mas de una linea, como en css
 	*/
 
-	var numero = 1; // este es un integer;
-	var string = 'Hola mundo'; // este es un string;
-	var bool = false;
+	// var numero = 1; // este es un integer;
+	// var string = 'Hola mundo'; // este es un string;
+	// var bool = false;
 
 	// console.log(typeof numero); // devuelve un string 'number'
 	// console.log(typeof string); // devuelve un string 'string'
@@ -381,17 +381,17 @@
 
 	// 2.- Crear 2 instancias de humano, el primero cambiar su nombre a Eduardo y el 2do su color pelo a castano claro.
 
-	function Humano(){
-		this.nombre = 'Juan';
-		this.edad = 30;
-		this.colorPelo = 'rojo';
-	}
+	// function Humano(){
+	// 	this.nombre = 'Juan';
+	// 	this.edad = 30;
+	// 	this.colorPelo = 'rojo';
+	// }
 
-	var usuario1 = new Humano();
-	usuario1.nombre = 'Eduardo'; // si solo se llama usuario1.nombre, arroja el valor actual
+	// var usuario1 = new Humano();
+	// usuario1.nombre = 'Eduardo'; // si solo se llama usuario1.nombre, arroja el valor actual
 	
-	var usuario2 = new Humano();
-	usuario2.colorPelo = 'Castaño claro';
+	// var usuario2 = new Humano();
+	// usuario2.colorPelo = 'Castaño claro';
 
 	// 	console.log(usuario1, usuario2);
 
@@ -410,33 +410,140 @@
 		*/
 
 
-	function Computador(){
-		this.ram = '2gb';
-		this.dd = '500gb';
-		this.procesador = 'i3';
-	}
+		// function Computador(){
+		// 	this.ram = '2gb';
+		// 	this.dd = '500gb';
+		// 	this.procesador = 'i3';
+		// }
 
-	var compu1 = new Computador();
-	var compu2 = new Computador();
-	var compu3 = new Computador();
+		// var compu1 = new Computador();
+		// var compu2 = new Computador();
+		// var compu3 = new Computador();
 
-	compu1.ram = '4gb';
-	compu2.dd = '1tb';
-	compu3.procesador = 'i7';
+		// compu1.ram = '4gb';
+		// compu2.dd = '1tb';
+		// compu3.procesador = 'i7';
 
-	// llamado 1
-	var compu1 = compu1.ram;
-	console.log(compu1);
+		// // llamado 1
+		// var compu1 = compu1.ram;
+		// console.log(compu1);
 
-	// llamado 2
+		// // llamado 2
 
-	var compu2 = compu2;
-	console.log(compu2.ram, compu2.dd);
+		// var compu2 = compu2;
+		// console.log(compu2.ram, compu2.dd);
 
-	// llamado 3
+		// // llamado 3
 
-	var compu3 = compu3;
-	console.log(compu3.ram, compu3.dd, compu3.procesador);
+		// var compu3 = compu3;
+		// console.log(compu3.ram, compu3.dd, compu3.procesador);
+
+
+	// MÉTODOS
+
+	// function Humano(){
+	// 	this.nombre = 'Juan';
+	// 	this.apellido = 'Soto';
+	// 	this.edad = 18;
+	// 	this.colorPelo;
+	// 	// aqui va el metodo
+	// 	this.envejecer = function(){
+	// 		this.edad++ ; // ++ envejece un año //accede a la propiedad de la edad definida arriba enla clase
+	// 	}
+
+	// 	this.nombreCompleto = function(){
+	// 		console.log(this.nombre + ' ' + this.apellido); // llama a los dos con el espacio en medio
+	// 	}
+
+	// 	this.imprimir = function(){
+	// 		console.log(this);
+	// 	}
+	// }
+
+	// function Humano(nombre, apellido){ // aqui se le pasan por argumentos.
+	// 	this.nombre = nombre;
+	// 	this.apellido = apellido;
+	// 	this.edad = 18;
+	// 	this.colorPelo;
+	// 	// aqui va el metodo
+	// 	this.envejecer = function(){
+	// 		this.edad++ ; // ++ envejece un año //accede a la propiedad de la edad definida arriba enla clase
+	// 	}
+
+	// 	this.nombreCompleto = function(){
+	// 		console.log(this.nombre + ' ' + this.apellido); // llama a los dos con el espacio en medio
+	// 	}
+
+	// 	this.imprimir = function(){
+	// 		console.log(this);
+	// 	}
+	// }
+
+	// humano1.imprimir();
+	// humano1.envejecer(); // envejecer se esta llamando como una funcion
+	// humano1.imprimir(); // se vuelve a imprimir para ver como cambia el dato con el método envejecer.
+
+	// var humano2 = new Humano();
+	// humano2.imprimir();
+
+	// var humano1 = new Humano('Juan', 'Soto');
+	// var humano2 = new Humano('Felipe', 'Soto');
+
+	// humano1.nombreCompleto();
+	// humano2.nombreCompleto();
+
+	// Ejercicio: definir una clase tipo Calculadora, debe recibir 2 numeros cuando se instancie. Esta clase debe tener 5 métodos: sumar los 2 numeros, restar los 2 numeros, multiplicar los 2 numeros, dividir los 2 numeros y finalmente imprimir "Los numeros entregados son: a y b y la operacion da como resultado: RESULTADO". Luego generar una instancia para llamar a todos los metodos e imprimir cada resultado.
+
+
+	// function Calculadora(a, b){
+
+	// 	this.suma = function(){
+	// 		this.resultado = a + b;
+			
+	// 	};
+
+	// 	this.resta = function(){
+	// 		this.resultado = a - b;
+	// 	};
+
+	// 	this.multip = function(){
+	// 		this.resultado = a * b;
+	// 	};
+
+	// 	this.dividir = function(){
+	// 		this.resultado = a / b;
+	// 	}
+
+	// 	this.imprimir = function(){
+	// 		console.log('Los números entregados son' + ' ' + a + ' ' + 'y' + ' ' + b + ' ' + 'y el resultado es' + ' ' + this.resultado )
+	// 	}
+
+	// }
+
+	// var calculo1 = new Calculadora(5, 2);
+
+	// calculo1.suma();
+	// calculo1.imprimir();
+
+	// calculo1.resta();
+	// calculo1.imprimir();
+
+	// calculo1.multip();
+	// calculo1.imprimir();
+
+	// calculo1.dividir();
+	// calculo1.imprimir();
+	
+
+	/* agregar validaciones:
+	- Los numeros no pueden estar indefinidos
+	- No se puede dividir por cero.
+	- Los numeros deben ser numeros.
+	- Manejar el error de división por cero, debe indicar "No se puede dividir por cero";
+	- No pueden ser numeros negativos.
+	- Para la multiplicacion, solo pueden ser
+	
+	
 
 	</script>
 </body>

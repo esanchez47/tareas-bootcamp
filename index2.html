@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	
+<!-- 	<form>
+		
+		<input id="numero1" type="number">
+		<input id="numero2" type="number">		
+
+	</form>
+	
+	<div id="resultado"></div>
+
+	<button onclick="sumar()" id="guardar">Sumar</button> -->
+
+
+	<form>
+		
+		<input id="nombre" type="text" placeholder="Ingresa tu nombre">
+		<br />
+		<input id="apellido" type="text" placeholder="Ingresa tu apellido">
+		<br />
+		<input id="edad" type="number" placeholder="Ingresa tu edad">
+
+	</form>
+
+	<button id="ingresar" onclick="validar()">Ingresar</button>
+
+	<script type="text/javascript">
+
+	// function sumar(){
+	// 	var numero1 = parseInt(document.getElementById('numero1').value);
+	// 	var numero2 = parseInt(document.getElementById('numero2').value);
+	// 	// parseInt para transformar a numeros enteros
+	// 	var resultado = document.getElementById('resultado');
+	// 	resultado.innerHTML = numero1 + numero2; // innerHTML
+
+		// otra forma de escribirla, reducida
+		// document.getElementById('resultado').innerHTML = numero1 + numero2;
+
+		/* Crear un formulario que le pida al usuario su nombre y apellido, ademas debe pedir la edad. Si el usuario es menor a 18 años, entregarle una alerta que diga que este sitio es para mayor de 18 años, si el usuario es mayor de 18, entregarle un mensaje de bienvenida. Ademas mostrar su nombre completo en el mensaje de bienvenida. */
+
+		function validar(){
+			var nombre = document.getElementById('nombre').value;
+			var apellido = document.getElementById('apellido').value;
+			var edad = parseInt(document.getElementById('edad').value);
+
+
+			if (edad < 18){
+				alert('Debes tener 18 años o más para ingresar. Adios!');
+			}
+
+			else{
+				alert('Bienvenido!' + ' ' + nombre + ' ' + apellido);
+			}
+
+		}
+
+	
+
+	</script>
+
+</body>
+</html>
